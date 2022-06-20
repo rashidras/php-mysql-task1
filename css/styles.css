@@ -1,0 +1,417 @@
+/* top section  */
+.inner-section {
+    background-color: #c4d70f;
+}
+.nav-background {
+    background-color: #c4d70f;
+}
+.header-buttons {
+    background-color: #c4d70f;
+    border: none;
+    color: white;
+    margin-right: 20px;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important;
+    /* Override the font-size specified earlier (36px) for all navigation links */
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .closebtn {
+        font-size: 40px !important;
+        top: 15px;
+        right: 35px;
+    }
+}
+.menu-button {
+   border: none; 
+}
+.login-and-signup{
+    margin-left: 70%;
+}
+.slide-image {
+    width: 100% !important;
+}
+.container-fluid {
+    padding: 20px;
+}
+.login {
+    margin-right: 20px;
+}
+.login-icon {
+    margin-right: 20px;
+}
+.signup-icon{
+    margin-right: 20px;
+}
+.innovative {
+    color: white;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.solutions {
+    font-weight: bold;
+}
+.slider-section {
+    background-color: #c4d70f;
+    height: 408px;
+}
+.slide-image {
+    width: 100%;
+}
+.title-para {
+    color: white;
+    margin-top: 20px;
+}
+.readmore {
+    display: inline-block;
+    padding: 9px 35px;
+    border: 2px solid #fefeff;
+    color: #fefeff;
+    border-radius: 35px;
+    background-color: #c4d70f;
+    margin-top: 20px;
+}
+.readmore:hover {
+    background-color: white;
+    color: black;
+}
+.carousel-indicators {
+    margin-left: -69%;
+    margin-bottom: 5%;
+    z-index: 0;
+}
+.carousel-indicators li {
+    font-family: fantasy;
+    font-size: 20px;
+    color: #f1f1f1;
+    text-indent: 0!important;
+    background-color: #c4d70f !important;
+}
+.arrow-buttons { 
+    text-align: center;
+    margin-top: 20px;
+}
+.prev-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border-style: none;
+    /* background-image: url('/images/left-black-arrow.png'); */
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.next-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border-style: none;
+    /* background-image: url('/images/right-black-arrow.png'); */
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.arrow-buttons img {
+    align-items: center;
+}
+.clip-path {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 560px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: #c4d70f;
+    clip-path: polygon(0 0, 100% 73%, 0% 100%);
+}
+
+/* end first styling section*/
+
+.why-initiative {
+    margin-top: 200px;
+}
+.company-title {
+    text-align: center;
+}
+.company-para {
+    font-size: 18px;
+    text-align: center;
+}
+.card-section {
+    margin-top: 50px;
+}
+.card-title h3 {
+    margin-top: 30px;
+    text-align: center;
+}
+.card-para {
+    padding-top: 15px;
+    text-align: center;
+}
+.card-image {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.card-image img {
+    width: 100px;
+}
+.box-shadow {
+    height: 450px;
+   
+} 
+.three-buttons {
+    text-align: center;
+    
+}
+.read-button {
+    display: inline-block;
+    padding: 9px 35px;
+    border: 2px solid #fefeff;
+    color: #c4d70f;
+    border-radius: 35px;
+    border-color: #c4d70f;
+    background-color: white; 
+}
+.read-button:hover {
+    background-color: #c4d70f;
+    color: white;
+}
+/* end company section */
+
+/* portfoli section */
+.portfolio-section {
+    margin-top: 10%;
+}
+.portfolio-para {
+    font-size: 18px;
+    text-align: center;
+}
+.portfolio-images-section {
+    padding-top: 10%;
+}
+.portfolio-img1 {
+    width: 100%;
+}
+.portfolio-img2 {
+    width: 100%;
+    height: 100%;
+}
+.portfolio-img3 {
+    padding-top: 10px;
+    width: 100%;
+}
+.portfolio-img4 {
+    padding-top: 10px;
+    height: 323px;
+    width: 100%;
+}
+.portfolio-images {
+    padding-top: 50px;
+}
+/* end portfoliosection */
+
+/* team-section */
+.our-team {
+    padding-top: 10%;
+}
+.team-image {
+    width: 75%;
+    margin-left: 40px;
+}
+.name-and-designation {
+    text-align: center;
+    padding-top: 20px;
+}
+.logo-images {
+    text-align: center;
+}
+.follow-on {
+    color: #a0e711;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.end-line{
+    padding-top: 5%;
+}
+hr {
+    border-top: 1px solid #a0e711;
+}
+/* end team part  */
+
+/* form section  */
+.form-section-title {
+    
+    text-align: center;
+}
+.dont-hesitate {
+    color: #787877;;
+}
+.label-length {
+    width: 75%;
+    height: 40px;
+}
+.textarea-height {
+    height: 100px;
+    width: 75%;
+    border-color:#787877 ;
+}
+.labels-padding {
+    padding-top: 5%;
+}
+.send-button {
+    display: inline-block;
+    padding: 9px 35px;
+    border: 2px solid #fefeff;
+    color: #fefeff;
+    border-radius: 35px;
+    background-color: #a0e711;
+    margin-top: 20px;
+}
+/* end form section styling */
+
+/* start last section  */
+.why-choose-title {
+    padding-top: 20%;
+    text-align: center;
+    height: 400%;
+    padding-bottom: 20%;
+}
+.why-choose-title-para {
+    padding: 25px 50px 75px 100px;
+}
+.map-image {
+    width: 100%;
+}
+.final-section {
+    padding-top: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: black;
+    color: white;
+}
+.final-polygon {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: black;
+    clip-path: polygon(0 222px, 100% 0, 100% 128%, 185% 100%);
+}
+.subscribe-button {
+    display: inline-block;
+    padding: 9px 35px;
+    color: #fefeff;
+    border-radius: 35px;
+    background-color: #a0e711;
+    margin-top: 5%;
+}
+.email-input {
+    width: 100%;
+    background-color: black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-top: 5%;
+}
+.about-us p {
+    font-size: larger;
+    text-indent: 1px;
+}
+.contact-us {
+    font-size: larger;
+}
+.social-media-icons {
+    padding-left: 65%;
+}
+.end-icons {
+    width: 18%;
+}
+.footer-section {
+    margin-top: 10px;
+}
+.copyright {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.horizondal-line {
+    padding-top: 5%;
+}
+hr.style2 {
+    border-top: 1px solid #ffffff;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#login-link:hover{
+    /*background-color: black;*/
+    color: black;
+
+}
+.select {
+    word-wrap: normal;
+    height: 40px;
+    width: 75%;
+}
